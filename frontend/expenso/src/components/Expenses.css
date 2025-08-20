@@ -1,0 +1,16 @@
+.expenses {
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    
+  }
+  
+  .spendo_title{
+      color: #aeed50;
+      font-size: 2rem;
+      flex: 1;
+      margin: 0 1rem;
+      color: white;
+    }

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1583364486567-ce2e045676e9?q=80&w=1334&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Semi-transparent overlay to keep text visible */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.expense-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.expense-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.expense-date {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.expense-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex: 1;
+  text-align: left;
+}
+
+.expense-amount {
+  background-color: rgba(0,0,0,0.8);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.app-title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
